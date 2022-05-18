@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Resume/CV{% endblock title %}
+
+{% block body %}
+<style>
+    body {
+      background-image: url('/static/4.gif');
+      background-color: #B9B0CC;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      color: #f1f1f1;
+    }
+    </style>
+    <div>
+        
+    <a href ="/static/Resume.pdf" attributes-list download > 
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-outline-warning" type="button" > Click here to download my Resume/CV</button>
+        </div>
+    </a> 
+        
+</div>
+    <a><img src="/static/8.png" align="center" width="1500" height="500" class="d-block"  alt="..." class="center"></a>
+</a>
+{% endblock body %}

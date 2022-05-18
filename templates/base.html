@@ -1,0 +1,229 @@
+
+
+
+<!doctype html>
+
+
+<html lang="en">
+  <head>
+    
+   
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/e811d91a98.js" crossorigin="anonymous">
+
+    </script>
+    
+    <title>{% block title %}{% endblock title %}  Anshul Personal Portfolio</title>
+  
+    <style>
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .navbar-brand
+    {
+      font-size: 28px;
+    }
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+      li a:hover, .dropdown:hover .dropbtn {
+        background-color: #2792d0;
+      }
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+      a:active {
+        background-color: yellow;
+      }
+      $("div").hover(
+    function() {
+        $(this).navbar-toggler('active');
+    }, function() {
+        if(!$( this).hasClass('clicked') ){
+            $( this ).removeClass('active');
+        }
+    }
+);
+
+$("div").click(function(){
+    $(this).navbar-toggler('clicked');
+});
+
+
+      </style>
+
+
+  </head>
+  </head>
+  <style>
+
+    body.padding {
+      padding-left: 0.2cm;
+      padding-right: 0.2cm;
+    }
+   
+  </style>
+
+
+  <body class="padding">
+    <div id="myDIV">
+
+    {% comment %} <nav class="navbar navbar-expand-lg navbar-dark bg-success"> {% endcomment %}
+    <nav class="navbar navbar-expand-lg navbar-dark" style = "background-color: black">
+      <a><img src="/static/1.gif" align="center" width="120" height="80" class="d-block"  alt="..." class="center"></a>
+    </a>
+
+
+        <div class="container-fluid">
+          {% comment %} <span style="background-color: #FFFF00" ><font face="Snap ITC" style= "color:blue">R.S.</span></font> {% endcomment %}
+          <h1><a href="/"><font face="forte" style= "color:#39b6fb"  size="45px" class="navbar-brand" >meetMe</font></a></h1>               
+          {% comment %} <h1><a><span style="background-color: white" ><font face="Snap ITC" style= "color:#2719B1" style="background-color:blue" size="45px" class="navbar-brand" href="/home">ENTERPRISES</font></a></h1>                {% endcomment %}
+          {% comment %} <div><img src="/static/1150.gif" align="center" width="110" height="100" class="d-block"  alt="..." class="center"></a> </div>   {% endcomment %}
+
+          {% comment %} <a><img src="/static/58589.gif" align="center" width="50" height="30" class="d-block"  alt="..." class="center"></a> {% endcomment %}
+          {% comment %} <img src="/static/1150.gif" align="center" width="90" height="90" class="d-block"  alt="..." class="center"></a>    {% endcomment %}
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+              <font face="Colonna MT" size="5px" >  <a class="nav-link active" aria-current="page" href="/">Home</a></font>
+              </li>
+              {% comment %} <li class="nav-item">
+                <font face="Colonna MT" size="5px"> <a class="nav-link active" href="/products">Products</a></font>
+              </li> 
+              <li class="nav-item dropdown">
+                <font face="Colonna MT" size="5px">  <a class="nav-link dropdown-toggle active" href="/services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" style= "color:#2719B1" href="/fextinguisherrefilling">Fire Extinguisher Refilling</a></li>
+                  <li><a class="dropdown-item" style= "color:#2719B1" href="/fireriskassessment">Fire Risk Assessment</a></li>
+                  <li><a class="dropdown-item" style= "color:#2719B1" href="/required">Requirement</a></li>
+                  
+                </ul> {% endcomment %}
+
+                <li class="nav-item">
+                    <font face="Colonna MT" size="5px" >  <a class="nav-link active" aria-current="page" href="about">About Me</a></font>
+                </li>
+                <li class="nav-item">
+                    <font face="Colonna MT" size="5px" >  <a class="nav-link active" aria-current="page" href="projects">Projects</a></font>
+                </li>
+                <li class="nav-item">
+                    <font face="Colonna MT" size="5px" >  <a class="nav-link active" aria-current="page" href="resume">CV/Resume</a></font>
+                </li>
+
+                <li class="nav-item">
+                    <font face="Colonna MT" size="5px" >  <a class="nav-link active" aria-current="page" href="contact">Contact Me</a></font>                  </li>
+                </font>
+            </ul>
+          </div>
+                
+
+
+            {% comment %} <img src="/static/1013.png" align="center" width="130" height="90" class="d-block"  alt="..." class="center"></a>    {% endcomment %}
+            {% comment %} <img src="/static/1014.png" align="center" width="80" height="70" class="d-block"  alt="..." class="center"></a>
+            <img src="/static/1110.png" align="center" width="80" height="70" class="d-block"  alt="..." class="center"></a> {% endcomment %}
+            <style>
+            .fa-phone {
+                color: white;
+              }
+            .fa-envelope {
+                color: white;
+              }
+            .fa-facebook-f {
+                color: white;
+              }
+            .fa-instagram {
+                color: white;
+              }
+            .fa-linkedin-in {
+                color: white;
+              }
+            </style>
+            <td>
+              <a{color:white;} style="padding-left:25px;" href='tel:9713193232'><i class="fa-solid fa-phone"  onclick="location.href='tel:6265217882'"></i></a>
+              <a{color:white;} style="padding-left:25px;" ><i class="fa-solid fa-envelope" onclick="location.href='mailto:ans769pat@gmail.com'"></i></a>
+              {% comment %} <a{color:inherit;} style="padding-left:25px;"><i class="fa-brands fa-google" onclick="location.href='https://www.google.com/maps/place/R.S+ENTERPRISES+FIRE+EQUIPMENTS+%26+FIRE+SAFETY+SERVICES+IN+INDORE/@22.724935,75.8613021,17z/data=!3m1!4b1!4m5!3m4!1s0x3962fd72c772111d:0x3899591ab0d42238!8m2!3d22.724935!4d75.8634908'"></i></a> {% endcomment %}
+              <a{color:inherit;} style="padding-left:25px;"><i class="fa-brands fa-facebook-f" onclick="location.href='https://www.facebook.com/anshul.patial.90'"></i></a>
+              <a{color:inherit;} style="padding-left:25px;"><i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/anshul_patial/?hl=en'"></i></a> 
+              <a{color:inherit;} style="padding-left:25px;"><i class="fa-brands fa-linkedin-in" onclick="location.href='https://www.linkedin.com/in/anshul-patial-084499220/'"></i></a> 
+            
+          
+            </td>
+
+            
+
+          </div>
+          <a><img src="/static/4.gif" align="center" width="100" height="80" class="d-block"  alt="..." class="center"></a>
+        </a>
+        </div>
+      </nav>
+
+     
+      
+ 
+{% if messages %}
+{% for message in messages %}
+      <div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0" role="alert">
+        <strong>{{ message }}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+ {% endfor %}      
+{% endif %}
+
+{% block body %} {% endblock body %}
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <span >&copy; 2022 Anshul Patial, Inc</span>
+    </div>
+<div>
+  
+  <td>
+    <a{color:white;} style="padding-left:25px;" href='tel:9713193232'><i class="fa-solid fa-phone"  onclick="location.href='tel:6265217882'"></i></a>
+    <a{color:white;} style="padding-left:25px;" ><i class="fa-solid fa-envelope" onclick="location.href='mailto:ans769pat@gmail.com'"></i></a>
+    {% comment %} <a{color:inherit;} style="padding-left:25px;"><i class="fa-brands fa-google" onclick="location.href='https://www.google.com/maps/place/R.S+ENTERPRISES+FIRE+EQUIPMENTS+%26+FIRE+SAFETY+SERVICES+IN+INDORE/@22.724935,75.8613021,17z/data=!3m1!4b1!4m5!3m4!1s0x3962fd72c772111d:0x3899591ab0d42238!8m2!3d22.724935!4d75.8634908'"></i></a> {% endcomment %}
+    <a{color:inherit;} style="padding-left:25px;"><i class="fa-brands fa-facebook-f" onclick="location.href='https://www.facebook.com/anshul.patial.90'"></i></a>
+    <a{color:inherit;} style="padding-left:25px;"><i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/anshul_patial/?hl=en'"></i></a> 
+    <a{color:inherit;} style="padding-left:25px;"><i class="fa-brands fa-linkedin-in" onclick="location.href='https://www.linkedin.com/in/anshul-patial-084499220/'"></i></a> 
+  
+
+  </td>
+  
+  </footer>
+  
+</div>
+

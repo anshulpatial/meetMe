@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+
+<style>
+    body {
+      background-image: url('/static/4.gif');
+      {% comment %} background-color: #B9B0CC; {% endcomment %}
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      color: #f1f1f1;
+    }
+    </style>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <section class="text-gray-600 body-font overflow-hidden">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+            <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+              <h2 class="text-sm title-font text-gray-500 tracking-widest">Personal Portfolio</h2>
+              <h1 class="text-blue-100 text-3xl title-font font-medium mb-2">HELLO EVERYBODY, I AM</h1>
+              <h1  style="color:#2792d0" class=" text-5xl title-font font-medium mb-4" >ANSHUL PATIAL</h1>
+              <div class="flex mb-4">
+                <a class="flex-grow text-indigo-100 border-b-2 border-gray-300 py-0 text-lg px-1" style="color:#39b6fb">About Me</a>
+                
+                 <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1"></a>
+                 <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1"></a>  
+              </div>
+              
+              <p class="leading-relaxed mb-1" style="color:white">Hometown is beautiful Palampur, Himachal Pradesh. </p>
+              <p class="leading-relaxed mb-4 py-0" style="color:white">Currently staying in Indore, Madhya Pradesh. </p>
+              <div class="flex border-t border-gray-200 py-2">
+                <span class="text-white">Master of Computer Application(MCA)</span>
+                <span class="ml-auto text-gray-900"></span>
+              </div>
+              <div class="flex border-t border-gray-200 py-2">
+                {% comment %} <span class="text-gray-500">Size</span>
+                <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span> {% endcomment %}
+          <h2 class="text-white font-medium title-font tracking-wider text-sm">Interested in <span class= "auto-type" style="color:#2792d0"></span>
+           </h2>
+           <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+           <script>
+            var typed = new Typed(".auto-type", {
+                strings: ["  Python", "Django", "Web Development"],
+                typeSpeed: 120,
+                backSpeed: 50,
+                loop: true
+            })
+          </script>
+                <span class="ml-auto text-gray-900"></span>
+              </div>
+              <div class="flex border-t border-b mb-6 border-gray-200 py-2">
+                <span class="text-white">Freelancer, Fresher</span>
+                <span class="ml-auto text-gray-900"></span>
+              </div>
+              <div >
+                {% comment %} <span class="title-font font-medium text-2xl text-gray-900">$58.00</span> {% endcomment %}
+                {% comment %} <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button> {% endcomment %}
+                <a href="contact">
+                  
+                      <button class="btn btn-outline-light" type="button">Hire Me</button>
+                    
+  
+              </a>
+                <a href ="/static/Resume.pdf" attributes-list download > 
+                <button type="button" class="btn btn-outline-light">Download CV</button></a>
+                {% comment %} <button class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
+                  </svg>
+                </button>
+                 {% endcomment %}
+                <td>
+                    <a{color:white;} style="padding-left:25px;" href='tel:6265217882'><i class="fa-solid fa-phone"  onclick="location.href='tel:6265217882'"></i></a>
+                    <a{color:white;} style="padding-left:25px;" ><i class="fa-solid fa-envelope" onclick="location.href='mailto:ans769pat@gmail.com'"></i></a>
+                    {% comment %} <a{color:inherit;} style="padding-left:25px;"><i class="fa-brands fa-google" onclick="location.href='https://www.google.com/maps/place/R.S+ENTERPRISES+FIRE+EQUIPMENTS+%26+FIRE+SAFETY+SERVICES+IN+INDORE/@22.724935,75.8613021,17z/data=!3m1!4b1!4m5!3m4!1s0x3962fd72c772111d:0x3899591ab0d42238!8m2!3d22.724935!4d75.8634908'"></i></a> {% endcomment %}
+                    <a{color:inherit;} style="padding-left:25px;"><i class="fa-brands fa-facebook-f" onclick="location.href='https://www.facebook.com/anshul.patial.90'"></i></a>
+                    <a{color:inherit;} style="padding-left:25px;"><i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/anshul_patial/?hl=en'"></i></a> 
+                    <a{color:inherit;} style="padding-left:25px;"><i class="fa-brands fa-linkedin-in" onclick="location.href='https://www.linkedin.com/in/anshul-patial-084499220/'"></i></a> 
+                    {% comment %} <i class="fa-brands fa-linkedin-in"></i> {% endcomment %}
+                
+                  </td>
+              </div>
+            </div>
+            <img alt="personal pic" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="/static/7.gif">
+          </div>
+        </div>
+      </section>      
+{% endblock body %}
